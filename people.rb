@@ -24,4 +24,11 @@ b = Student.new("Cristina")
 p a.greeting
 p b.greeting
 
+p a.teach
+p b.learn
+
+#p b.teach --> receives "NoMethodError"
+# Does not work for Student because Student cannot reference Instructor
+# (con't) in the same way it can reference Person and therefore share its
+# (con't) instance variables
 end
